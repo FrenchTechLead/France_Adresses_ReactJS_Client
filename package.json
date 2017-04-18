@@ -1,16 +1,13 @@
 {
-  "name": "adress_finder",
+  "name": "Address Finder",
+  "description":"Ceci est une application très légère qui utilise l'API de géocodage Adresse Nationale et google static maps pour trouver des adresse en France avec le minimum de frais data.",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "react": "^15.5.4",
     "react-bootstrap": "^0.30.8",
     "react-dom": "^15.5.4",
-    "react-google-maps": "^6.0.1",
-    "react-input-range": "^1.1.2",
-    "react-rangeslider": "^2.0.1",
-    "react-redux": "^5.0.4",
-    "redux": "^3.6.0"
+    "react-rangeslider": "^2.0.1"
   },
   "devDependencies": {
     "react-scripts": "0.9.5"

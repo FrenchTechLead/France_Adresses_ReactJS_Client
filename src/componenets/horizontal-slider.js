@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Slider from 'react-rangeslider';
-import 'react-rangeslider/lib/index.css';
+import '../css/modal.css';
 import $ from 'jquery';
 
 export default class Horizontal extends Component {
@@ -19,7 +19,7 @@ export default class Horizontal extends Component {
     }
 
     handleChangeComplete = (e) => {
-        var link = this.props.link_head + this.state.value + this.props.link_tail;
+        var link = this.props.static_link + this.state.value;
         $("#map").attr("src",link);
     }
 

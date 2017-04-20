@@ -29,11 +29,11 @@ export default class LocationModal extends React.Component{
         var maxHeight = $(window).height() * 0.7;
         var maxWidth = $(window).width() * 0.7;
         var coorString =this.state.cordinates[1]+","+this.state.cordinates[0];
-        var link_head = "https://maps.googleapis.com/maps/api/staticmap?center="+
-            coorString+
-            "&size="+Math.floor(maxWidth)+"x"+Math.floor(maxHeight)+"&zoom=";
-        var link_tail = "&markers=color:red%7Clabel:C%7C" + coorString;
-        var link = link_head+"17"+link_tail;
+        var static_link = "https://maps.googleapis.com/maps/api/staticmap?center="+
+                            coorString+"&markers=color:blue%7Clabel:A%7C" + coorString+
+                            "&size="+Math.floor(maxWidth)+"x"+Math.floor(maxHeight)+
+                            "&key=AIzaSyDCL2DyuEdSb0QsqQ5gDpyFyZpBm6JaJrU"+"&zoom=";
+        var link = static_link+"17";
 
             return(
                 <Modal
@@ -41,17 +41,15 @@ export default class LocationModal extends React.Component{
                     show={this.state.showModal}
                     onHide={this.toggleModal}
                     bsSize="large">
-                    <Modal.Header closeButton>
-                        <Modal.Title id="modal-header" className="text-center">
-                            <Horizontal link_head={link_head} link_tail={link_tail}/>
-                        </Modal.Title>
+                    <Modal.Header style={{'padding':'0px'}}>
+                            <Horizontal static_link={static_link} />
                     </Modal.Header>
                     <Modal.Body>
 
                         <img src={link} id="map"  alt="Chargement..." width="100%" height={maxHeight}/>
                     </Modal.Body>
                     <Modal.Footer>
-                        <Button onClick={()=>{this.toggleModal()}}>Fermer</Button>
+                        <Button bsStyle="danger" onClick={()=>{this.toggleModal()}}>Fermer</Button>
                     </Modal.Footer>
                 </Modal>
             );

@@ -1,0 +1,27 @@
+#search-bar{
+  background: transparent;
+  font-size: 30px;
+  text-align:center;
+  width:100%;
+  color:black;
+}
+
+#search-bar:focus{
+  color: black;
+}
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+  color:    grey;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color:    grey;
+  opacity:  1;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color:    grey;
+  opacity:  1;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color:    grey;
+}

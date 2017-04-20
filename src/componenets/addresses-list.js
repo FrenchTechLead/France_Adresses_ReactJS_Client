@@ -1,8 +1,8 @@
 import React from 'react';
-import {ListGroup, Button, Glyphicon} from 'react-bootstrap';
 import LocationModal from './location-modal';
 import ReactDOM from 'react-dom';
-import  '../css/btn-style.css'
+import  '../css/addresses-list.css';
+import compass from '../img/compass.svg';
 
 export default class AddressesList extends React.Component{
 
@@ -30,24 +30,20 @@ export default class AddressesList extends React.Component{
     render(){
         var addresses = this.state.addresses;
         return(
-            <ListGroup id="list_group">
-
+            <div>
                 {
                     addresses.map(item=>{
                     return<div className="row list_item">
-                        {item.properties.label}
+                    <button
+                        id="show-btn"
+                        onClick={() => {this.showModal(item.geometry.coordinates)}}>
+                        <img src={compass}  alt="logo" className="compass"/>
+                    </button>
 
-                            <Button
-                                bsStyle="success"
-                                bsSize="small"
-                                id="show-btn"
-                                onClick={() => {this.showModal(item.geometry.coordinates)}}>
-                                Maps
-                                <Glyphicon glyph="map-marker"/>
-                            </Button>
-                        </div>;
+                        {item.properties.label}
+                    </div>;
                 })}
-            </ListGroup>
+            </div>
 
         );
     }

@@ -1,8 +1,8 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {FormControl,FormGroup,InputGroup} from 'react-bootstrap';
 import AddressesList from './addresses-list';
 import $ from 'jquery';
+import "../css/search-bar.css";
 
 export default class SearchBar extends React.Component{
     constructor(props) {
@@ -12,7 +12,7 @@ export default class SearchBar extends React.Component{
     }
 
     componentDidMount() {
-        $("#address_input").focus();
+        document.getElementById("search-bar").focus();
     }
 
     handleChange(event) {
@@ -32,11 +32,7 @@ export default class SearchBar extends React.Component{
     }
 
     render(){
-        return(
-            <FormGroup>
-                <InputGroup className="input-group-btn">
-                    <FormControl id="address_input" type="text" onChange={this.handleChange} placeholder="Ex: 1 rue de la paix" bsSize="large"/>
-                </InputGroup>
-            </FormGroup>);
-    }
+        return(<div className="row">
+                    <input id="search-bar" type="text" onChange={this.handleChange} placeholder="Ex: 1 rue de la paix"/>
+              </div>);}
 }

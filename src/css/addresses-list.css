@@ -1,0 +1,19 @@
+.list_item{
+  color: black;
+  font-size: 18px;
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.list_item:hover{
+  background-color: #efefef;
+}
+
+#show-btn{
+    float: right;
+    margin-right: 6px;
+    margin-top: 6px;
+}
+.compass{
+  height: 40px;
+}

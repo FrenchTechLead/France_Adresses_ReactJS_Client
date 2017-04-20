@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './img/logo.svg';
 import SearchBar from './componenets/search-bar';
-import './css/App.css';
+import './css/app.css';
 
 export default class App extends React.Component {
   render() {

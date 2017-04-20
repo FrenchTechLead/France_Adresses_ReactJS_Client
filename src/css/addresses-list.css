@@ -1,19 +1,32 @@
 .list_item{
   color: black;
-  font-size: 18px;
-  margin-left: 25px;
-  margin-right: 25px;
+  font-size: 20px;
+  margin-left:25px;
+  margin-right:25px;
+  padding-bottom: 12px;
+  padding-top: 12px;
 }
 
 .list_item:hover{
   background-color: #efefef;
 }
-
-#show-btn{
-    float: right;
-    margin-right: 6px;
-    margin-top: 6px;
+.address-text{
+  text-align: left;
+  height: 100%;
 }
+
 .compass{
-  height: 40px;
+  height: 100%;
+}
+.compass:hover{
+  cursor: pointer;
+}
+.show-btn{
+  height: 50px;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .list_item{
+    font-size: 20px;
+  }
 }

@@ -32,7 +32,7 @@ export default class SearchBar extends React.Component{
     }
 
     render(){
-        return(<div className="row">
+        return(<div className="row search-bar-container">
                     <input id="search-bar" type="text" onChange={this.handleChange} placeholder="Ex: 1 rue de la paix"/>
               </div>);}
 }

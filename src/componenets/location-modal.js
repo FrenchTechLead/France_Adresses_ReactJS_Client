@@ -1,6 +1,7 @@
 import React from 'react';
 import {Modal, Button} from 'react-bootstrap';
 import Horizontal from './horizontal-slider';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
 export default class LocationModal extends React.Component{
 
@@ -56,7 +57,3 @@ export default class LocationModal extends React.Component{
             );
     }
 }
-
-
-
-

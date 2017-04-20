@@ -34,13 +34,17 @@ export default class AddressesList extends React.Component{
                 {
                     addresses.map(item=>{
                     return<div className="row list_item">
-                    <button
-                        id="show-btn"
+                    <div
+                        className="col-xs-2 show-btn"
                         onClick={() => {this.showModal(item.geometry.coordinates)}}>
-                        <img src={compass}  alt="logo" className="compass"/>
-                    </button>
 
+                          <img src={compass}  alt="logo" className="compass"/>
+
+                    </div>
+
+                        <div className="col-xs-10 address-text">
                         {item.properties.label}
+                        </div>
                     </div>;
                 })}
             </div>

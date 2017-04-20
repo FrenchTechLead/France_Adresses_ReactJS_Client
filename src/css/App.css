@@ -18,3 +18,14 @@ body{
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
 }
+
+@media only screen and (max-device-width: 480px) {
+  .App-logo {
+    height: 40px;
+  }
+  .App-header {
+    height: 200px;
+    padding: 25px;
+    color: #0288d1;
+  }
+}

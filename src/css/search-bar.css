@@ -5,11 +5,12 @@
   width:100%;
   color:black;
 }
-
 #search-bar:focus{
-  color: black;
+  border: 2px solid #0288d1;
 }
-
+.search-bar-container{
+  padding: 14px;
+}
 
 ::-webkit-input-placeholder { /* WebKit, Blink, Edge */
   color:    grey;
@@ -24,4 +25,15 @@
 }
 :-ms-input-placeholder { /* Internet Explorer 10-11 */
   color:    grey;
+}
+@media only screen and (max-device-width: 480px) {
+  #search-bar{
+    font-size: 25px;
+  }
+  #search-bar:focus{
+    border: 2px solid #0288d1;
+  }
+  h2{
+    font-size:22px;
+  }
 }

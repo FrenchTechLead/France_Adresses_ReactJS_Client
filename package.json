@@ -1,9 +1,13 @@
 {
-  "name": "Adresses_en_France",
-  "description":"Ceci est une application très légère qui utilise l'API de géocodage Adresse Nationale et google static maps pour trouver des adresse en France avec le minimum de frais data.",
+  "name": "AdressFinder",
+  "description": "Ceci est une application très légère qui utilise l'API de géocodage Adresse Nationale et google static maps pour trouver des adresse en France avec le minimum de frais data.",
   "version": "0.1.0",
+  "repository": "https://github.com/Meshredded/France_Adresses_ReactJS_Client",
+  "license": "MIT",
   "private": false,
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.2.1",
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-rangeslider": "^2.0.1"

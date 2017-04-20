@@ -8,13 +8,16 @@ export default class SearchBar extends React.Component{
     constructor(props) {
         super(props);
         this.handleChange = this.handleChange.bind(this);
-
+        this.select = this.select.bind(this);
     }
 
     componentDidMount() {
         document.getElementById("search-bar").focus();
     }
 
+    select(){
+        document.getElementById("search-bar").select();
+    }
     handleChange(event) {
         var keyWord = event.target.value;
         var addressAPI = "http://api-adresse.data.gouv.fr/search/?q=";
@@ -32,7 +35,10 @@ export default class SearchBar extends React.Component{
     }
 
     render(){
-        return(<div className="row search-bar-container">
-                    <input id="search-bar" type="text" onChange={this.handleChange} placeholder="Ex: 1 rue de la paix"/>
-              </div>);}
+        return(<input id="search-bar"
+                      type="text"
+                      onChange={this.handleChange}
+                      onClick={e=>{this.select()}}
+                      placeholder="Rue, Avenue, ..."/>
+              );}
 }

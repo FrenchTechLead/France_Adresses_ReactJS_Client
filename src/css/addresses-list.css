@@ -25,8 +25,11 @@
   height: 50px;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 400px) {
   .list_item{
-    font-size: 20px;
+    font-size: 16px;
+  }
+  .show-btn{
+    height: 40px;
   }
 }

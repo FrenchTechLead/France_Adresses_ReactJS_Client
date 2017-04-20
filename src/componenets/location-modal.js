@@ -42,11 +42,11 @@ export default class LocationModal extends React.Component{
                     bsSize="large">
                     <Modal.Header closeButton>
                         <Modal.Title id="modal-header" className="text-center">
-                            Google Maps
+                            <Horizontal link_head={link_head} link_tail={link_tail}/>
                         </Modal.Title>
                     </Modal.Header>
                     <Modal.Body>
-                        <Horizontal link_head={link_head} link_tail={link_tail}/>
+
                         <img src={link} id="map"  alt="Chargement..." width="100%" height={maxHeight}/>
                     </Modal.Body>
                     <Modal.Footer>

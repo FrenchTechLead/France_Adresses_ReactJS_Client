@@ -1,11 +1,10 @@
 {
-  "name": "Adresse en France",
+  "name": "Adresses_en_France",
   "description":"Ceci est une application très légère qui utilise l'API de géocodage Adresse Nationale et google static maps pour trouver des adresse en France avec le minimum de frais data.",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
     "react": "^15.5.4",
-    "react-bootstrap": "^0.30.8",
     "react-dom": "^15.5.4",
     "react-rangeslider": "^2.0.1"
   },

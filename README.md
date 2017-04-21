@@ -6,7 +6,9 @@ Ceci est une application très légère qui utilise [l'API](https://www.data.gou
 Installation:
 ============
 `cd France_Adresses_ReactJS_Client`
+
 `npm install`
+
 `npm run`
 
 Licence :
